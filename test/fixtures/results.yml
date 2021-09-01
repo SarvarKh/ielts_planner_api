@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  writing_score: MyString
+  decimal: MyString
+  speaking_score: 9.99
+  reading_correct_answer: 1
+  reading_score: 9.99
+  listening_correct_answer: 1
+  listening_score: 9.99
+  passed_date: 2021-09-01
+  overall_score: 9.99
+
+two:
+  user: two
+  writing_score: MyString
+  decimal: MyString
+  speaking_score: 9.99
+  reading_correct_answer: 1
+  reading_score: 9.99
+  listening_correct_answer: 1
+  listening_score: 9.99
+  passed_date: 2021-09-01
+  overall_score: 9.99
