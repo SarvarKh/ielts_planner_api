@@ -154,6 +154,7 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     sqlite3 (1.4.2)
+    table_print (1.5.7)
     thor (1.1.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
@@ -175,6 +176,7 @@ DEPENDENCIES
   rubocop (>= 1.0, < 2.0)
   spring
   sqlite3 (~> 1.4)
+  table_print
   tzinfo-data
 
 RUBY VERSION
