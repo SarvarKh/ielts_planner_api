@@ -9,7 +9,7 @@
 ### Entity Relationship Diagram
 
 <div align="center">
-  <img src="screenshots/erd.png?raw=true" width="100%" height="auto"/>
+  <img src="screenshots/erd2.png?raw=true" width="100%" height="auto"/>
 </div>
 
 ## Built With
