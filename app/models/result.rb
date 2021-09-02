@@ -7,6 +7,6 @@ class Result < ApplicationRecord
   validates :reading_score, presence: true, numericality: { only_decimal: true }
   validates :listening_correct_answer, presence: true, numericality: { only_integer: true }
   validates :listening_score, presence: true, numericality: { only_decimal: true }
-  validates :passed_date, presence: true, numericality: { only_decimal: true }
+  validates :passed_date, presence: true
   validates :overall_score, presence: true, numericality: { only_decimal: true }
 end
