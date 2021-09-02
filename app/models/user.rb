@@ -12,8 +12,4 @@ class User < ApplicationRecord
     validates :level_initial, numericality: { only_decimal: true }
     validates :level_current, numericality: { only_decimal: true }
     validates :level_plan, numericality: { only_decimal: true }
-
-    validates :level_initial, inclusion: { in: %w(0.0 0.5 1.0 1.5 2.0 2.5 3.0 3.5 4.0 4.5 5.0 5.5 6.0 6.5 7.0 7.5 8.0 8.5 9.0),
-        message: "%{value} is not a valid IELTS score, please select between 0.0 and 9.0" }
-    
 end
