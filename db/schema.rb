@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_03_051751) do
+ActiveRecord::Schema.define(version: 2021_09_03_052329) do
 
   create_table "results", force: :cascade do |t|
     t.integer "user_id", null: false
@@ -32,7 +32,6 @@ ActiveRecord::Schema.define(version: 2021_09_03_051751) do
     t.string "occupation"
     t.text "photo"
     t.string "email"
-    t.string "password"
     t.integer "age"
     t.string "gender"
     t.decimal "level_initial"
@@ -41,6 +40,7 @@ ActiveRecord::Schema.define(version: 2021_09_03_051751) do
     t.date "due_date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "password_digest"
   end
 
   add_foreign_key "results", "users"
