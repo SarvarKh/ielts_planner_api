@@ -12,7 +12,7 @@ class ResultsController < ApplicationController
 
   def create
     @result = current_user.results.create!(result_params)
-    json_response(@result, :createed)
+    json_response(@result, :created)
   end
 
   def edit
