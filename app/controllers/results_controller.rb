@@ -1,8 +1,7 @@
 class ResultsController < ApplicationController
   def index
-    @results = Result.where(:user_id => params[:user_id])
-
-    render json: @results
+    @results = current_user.results
+    json_response(@results)
   end
 
   def show
@@ -11,20 +10,9 @@ class ResultsController < ApplicationController
     render json: @result
   end
 
-  def new
-    @result = Result.new
-
-    render json: @result
-  end
-
-
   def create
-    @result = Result.new(result_params)
-    if @result.save
-      redirect_to root_path
-    else
-      render :new
-    end
+    @result = current_user.results.create!(result_params)
+    json_response(@result, :createed)
   end
 
   def edit
