@@ -34,16 +34,10 @@
 - [Project demo](https://youtu.be/K9bsIsaHN70)
 - [Project Technical concepts](https://youtu.be/lXN7O4bP7z4)
 
-## Project Tree Diagram
-
-<div align="center">
-  <img src="screenshots/diagram-2.png?raw=true" width="100%" height="auto"/>
-</div>
-
 ## Testing with RSpec
 
 <div align="center">
-  <img src="screenshots/testing-2.png?raw=true" width="70%" height="auto"/>
+  <img src="screenshots/testing.png?raw=true" width="80%" height="auto"/>
 </div>
 
 ## Getting Started
