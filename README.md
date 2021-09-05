@@ -26,9 +26,10 @@
 - [React Testing Library](https://github.com/testing-library/react-testing-library)
 - [HTML](https://html.spec.whatwg.org/)/[CSS](https://www.w3.org/TR/CSS/#css)
 
-## Live Demo
+## Live Demos
 
 [Live Demo Link](https://easy-recipes-catalogue.netlify.app/)
+API link: https://dry-brushlands-93092.herokuapp.com/
 
 ### Project Videos
 - [Project demo](https://youtu.be/K9bsIsaHN70)
