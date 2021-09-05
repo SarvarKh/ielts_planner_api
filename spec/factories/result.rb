@@ -8,7 +8,7 @@ FactoryBot.define do
     reading_score { Faker::Lorem.number(6.0) }
     listening_correct_answer { Faker::Lorem.number(35) }
     listening_score { Faker::Lorem.number(6.5) }
-    passed_date { Date.today-3 }
+    passed_date { Date.today - 3 }
     overall_score { Faker::Lorem.number(6.5) }
   end
 end

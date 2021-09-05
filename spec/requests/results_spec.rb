@@ -18,33 +18,33 @@ RSpec.describe 'Results API', type: :request do
   describe 'GET /results/:id' do
     before { get "/results/#{result_id}", params: {}, headers: headers }
     # [...]
-    end
+  end
+  # [...]
+end
+
+describe 'POST /results' do
+  let(:valid_attributes) do
+    # send json payload
+    { title: 'Learn Elm', created_by: user.id.to_s }.to_json
+  end
+
+  context 'when request is valid' do
+    before { post '/results', params: valid_attributes, headers: headers }
     # [...]
   end
 
-  describe 'POST /results' do
-    let(:valid_attributes) do
-      # send json payload
-      { title: 'Learn Elm', created_by: user.id.to_s }.to_json
+  context 'when the request is invalid' do
+    let(:invalid_attributes) { { title: nil }.to_json }
+    before { post '/results', params: invalid_attributes, headers: headers }
+
+    it 'returns status code 422' do
+      expect(response).to have_http_status(422)
     end
 
-    context 'when request is valid' do
-      before { post '/results', params: valid_attributes, headers: headers }
-      # [...]
+    it 'returns a validation failure message' do
+      expect(json['message'])
+        .to match('Missing token')
     end
-
-    context 'when the request is invalid' do
-      let(:invalid_attributes) { { title: nil }.to_json }
-      before { post '/results', params: invalid_attributes, headers: headers }
-
-      it 'returns status code 422' do
-        expect(response).to have_http_status(422)
-      end
-
-      it 'returns a validation failure message' do
-        expect(json['message'])
-          .to match("Missing token")
-      end
   end
 
   describe 'PUT /results/:id' do
