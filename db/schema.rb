@@ -10,11 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_11_055828) do
+ActiveRecord::Schema.define(version: 2021_09_11_060855) do
 
   create_table "results", force: :cascade do |t|
     t.integer "user_id", null: false
-    t.string "writing_score"
     t.decimal "speaking_score"
     t.decimal "reading_score"
     t.decimal "listening_score"
@@ -22,6 +21,7 @@ ActiveRecord::Schema.define(version: 2021_09_11_055828) do
     t.decimal "overall_score"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.decimal "writing_score"
     t.index ["user_id"], name: "index_results_on_user_id"
   end
 
