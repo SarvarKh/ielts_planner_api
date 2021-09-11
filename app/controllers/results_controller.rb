@@ -38,7 +38,6 @@ class ResultsController < ApplicationController
         :speaking_score,
         :reading_score,
         :listening_score,
-        :passed_date,
         :overall_score
       )
   end

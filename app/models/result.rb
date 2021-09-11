@@ -5,6 +5,5 @@ class Result < ApplicationRecord
   validates :speaking_score, presence: true, numericality: { only_decimal: true }
   validates :reading_score, presence: true, numericality: { only_decimal: true }
   validates :listening_score, presence: true, numericality: { only_decimal: true }
-  validates :passed_date, presence: true
   validates :overall_score, presence: true, numericality: { only_decimal: true }
 end

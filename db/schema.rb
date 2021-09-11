@@ -10,14 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_11_061839) do
+ActiveRecord::Schema.define(version: 2021_09_11_100019) do
 
   create_table "results", force: :cascade do |t|
     t.integer "user_id", null: false
     t.decimal "speaking_score"
     t.decimal "reading_score"
     t.decimal "listening_score"
-    t.date "passed_date"
     t.decimal "overall_score"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
