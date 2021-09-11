@@ -6,12 +6,8 @@ RSpec.describe Result, type: :model do
   it { should validate_numericality_of(:writing_score) }
   it { should validate_presence_of(:speaking_score) }
   it { should validate_numericality_of(:speaking_score) }
-  it { should validate_presence_of(:reading_correct_answer) }
-  it { should validate_numericality_of(:reading_correct_answer) }
   it { should validate_presence_of(:reading_score) }
   it { should validate_numericality_of(:reading_score) }
-  it { should validate_presence_of(:listening_correct_answer) }
-  it { should validate_numericality_of(:listening_correct_answer) }
   it { should validate_presence_of(:listening_score) }
   it { should validate_numericality_of(:listening_score) }
   it { should validate_presence_of(:passed_date) }
