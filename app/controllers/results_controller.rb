@@ -36,9 +36,7 @@ class ResultsController < ApplicationController
       .permit(
         :writing_score,
         :speaking_score,
-        :reading_correct_answer,
         :reading_score,
-        :listening_correct_answer,
         :listening_score,
         :passed_date,
         :overall_score
