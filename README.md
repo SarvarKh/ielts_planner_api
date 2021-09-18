@@ -1,8 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# IELTS planner
+# IELTS planner (Back-end)
 
-> The IELTS planner is a responsive application built with Ruby on Rails for back-end (creating APIs) and React and Redux for front-end (fetching data from the ROR APIs). Every page, the main page, and pages for each item have a unique route within the SPA. Rails Controller actions were tested with RSpec.
+> The app is a 30 tasks challenge to achieve IELTS desired score. It challenges users to do reading, writing, listening, and speaking tests of IELTS ([click here](https://www.ielts.org/about-ielts/what-is-ielts) to find out more).
+This app also shows to users their progress and compares it with planned daily scores to motivate them to do more. You should also note that the app is not responsive for Desktop, you can open it only on mobile or tablet. This repository is the Back-End part of the app cause it's a Full-Stack Application built using React/Redux and Ruby on Rails. You can find the Front-End repository [here](https://github.com/elmejdki/sixpack-tracker-frontend).
 
 **Check out the dediceted repositery for the front-end part [here]().**
 
